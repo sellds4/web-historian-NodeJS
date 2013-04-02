@@ -19,7 +19,7 @@ describe("html fetcher helpers", function(){
     });
   });
   
-  xit("should have a 'downloadUrls' function", function(){
+  xit("should have a 'downloadUrls' function", function(){  // we need to modify this to test our own downloadURLs function
     var result = htmlFetcherHelpers.downloadUrls();
     expect(result).toBeTruthy();
   });

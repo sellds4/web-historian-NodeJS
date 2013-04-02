@@ -1,5 +1,5 @@
 var handler = require("../web/request-handler");
-handler.datadir = __dirname + "testdata/sites.txt";
+handler.datadir = __dirname + "testdata/sites.txt"; // this makes a new directory for our testing environment
 var stubs = require("./helpers/stubs");
 var res;
 
@@ -20,7 +20,7 @@ describe("Node Server Request Listener Function", function() {
     handler.handleRequest(req, res);
     async(function(){
       expect(res._responseCode).toEqual(200);
-      expect(res._data).toMatch(/<input/); // the resulting html should have an input tag
+      expect(res._data).toMatch(/<input/); // the resulting html should have an input tag  -- > use node to open that file and send it to the user
       expect(res._ended).toEqual(true);
     });
   });
@@ -31,13 +31,13 @@ describe("Node Server Request Listener Function", function() {
     handler.handleRequest(req, res);
     async(function(){
       expect(res._responseCode).toEqual(200);
-      expect(res._data).toMatch(/google/); // the resulting html should have the text "google"
+      expect(res._data).toMatch(/google/); // the resulting html should have the text "google" -- > send out the pages we've archived upon request
       expect(res._ended).toEqual(true);
     })
   });
 
   it("Should accept posts to /", function() {
-    fs.writeFileSync(handler.datadir, ""); // reset the test file
+    fs.writeFileSync(handler.datadir, ""); // reset the test file -- > this happens automatically when this test runs
 
     var url = "www.example.com";
     var req = new stubs.Request("http://127.0.0.1:8080/", "POST", {url: url});
