@@ -1,6 +1,7 @@
 var handler = require("../web/request-handler");
-handler.datadir = __dirname + "testdata/sites.txt"; // this makes a new directory for our testing environment
+handler.datadir = __dirname + "/testdata/sites.txt"; // this makes a new directory for our testing environment
 var stubs = require("./helpers/stubs");
+var fs = require('fs');
 var res;
 
 // allows us to run tests async
@@ -33,7 +34,7 @@ describe("Node Server Request Listener Function", function() {
       expect(res._responseCode).toEqual(200);
       expect(res._data).toMatch(/google/); // the resulting html should have the text "google" -- > send out the pages we've archived upon request
       expect(res._ended).toEqual(true);
-    })
+    });
   });
 
   it("Should accept posts to /", function() {
@@ -44,7 +45,7 @@ describe("Node Server Request Listener Function", function() {
 
     handler.handleRequest(req, res);
 
-    var fileContents = fs.readFileSync(handler.datadir);
+    var fileContents = fs.readFileSync(handler.datadir, ['utf8']);
     expect(res._responseCode).toEqual(302);
     expect(fileContents).toEqual(url + "\n");
     expect(res._ended).toEqual(true);

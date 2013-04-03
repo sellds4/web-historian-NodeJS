@@ -7,11 +7,11 @@ $(function(){
 		$('.url').text('');
 		$.ajax({
 			type: 'POST',
-			url: // dunno yet...,
+			url: "http://127.0.0.1:8080/",
 			data: value,
 			success: function(){ console.log('yeehaw, motherfuckers!'); },
 			error: function(){ console.log('epic fail.'); }
-		})
+		});
 
 	});
 });
