@@ -3,8 +3,7 @@ var fs = require('fs');
 var qs = require('querystring');
 var url = require('url');
 var reg = /(www\.){0,1}[a-zA-Z0-9\.\-]+\.[a-zA-Z]{2,5}[\.]{0,1}/;
-// var __ = require('../lib/underscore-min');
-var dir = '/Users/Catalyst/code/AndrewMagliozzi/web-historian/data/sites.txt'
+var dir = '/Users/Catalyst/code/AndrewMagliozzi/web-historian/data/sites.txt';
 
 exports.datadir = __dirname + "/data/sites.txt"; // tests will need to override this.
 
