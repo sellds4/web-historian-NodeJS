@@ -1,10 +1,5 @@
 www.google.com
-www.me.com
 www.yahoo.com
-www.shmuck.com
-www.yahoo.com
-test
-test.com
-www.this.com
-www.xxx.com
-fjsdk
+espn.go.com
+www.cnn.com
+hackreactor.com

@@ -1,4 +1,2 @@
 example1.com
-example2.comwww.google.com
-www.me.com
-www.me.com
+example2.com
