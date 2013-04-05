@@ -43,9 +43,9 @@ cnnPageName="CNN Home Page",
 cnnSectionName="CNN Home Page",
 sectionName="homepage",
 cnn_edtnswtchver="www",
-cnnCurrTime=new Date(1365187952000),
+cnnCurrTime=new Date(1365188048000),
 cnnCurrHour=14,
-cnnCurrMin=52,
+cnnCurrMin=54,
 cnnCurrDay='Fri',
 weatherTitle='News';
 </script>
@@ -495,7 +495,7 @@ $j('#cnn_pmtvmodule').parent().addClass('tve');
 <div class="pmWrapper">
 <div class="marketTime">
 <span>Updated&nbsp;</span>
-<span id="indexUpdated">2:51 pm EDT Apr 5</span>
+<span id="indexUpdated">2:52 pm EDT Apr 5</span>
 </div>
 <a id="myQuotesBtn" class="toggle togOff"><span>My quotes</span></a>
 <a id="defIndexBtn" class="toggle togOn"><span>Indexes</span></a>
@@ -507,14 +507,14 @@ $j('#cnn_pmtvmodule').parent().addClass('tve');
 <span class="marketName">
 <a href="http://money.cnn.com/data/markets/dow/">Dow</a>
 </span>
-<span class="marketIndex">14,525.27</span>
+<span class="marketIndex">14,524.13</span>
 </div>
 <div class="marketNums-right down">
 <div class="percentDiff">
-<span>(<span class="plusMinus">-</span>0.55 &#37;)</span>
+<span>(<span class="plusMinus">-</span>0.56 &#37;)</span>
 </div>
 <div class="numDiff">
-<span><span class="plusMinus">-</span>80.84</span>
+<span><span class="plusMinus">-</span>81.98</span>
 </div>
 </div>
 </li>
@@ -523,14 +523,14 @@ $j('#cnn_pmtvmodule').parent().addClass('tve');
 <span class="marketName">
 <a href="http://money.cnn.com/data/markets/nasdaq/">Nasdaq</a>
 </span>
-<span class="marketIndex">3,195.01</span>
+<span class="marketIndex">3,195.03</span>
 </div>
 <div class="marketNums-right down">
 <div class="percentDiff">
 <span>(<span class="plusMinus">-</span>0.93 &#37;)</span>
 </div>
 <div class="numDiff">
-<span><span class="plusMinus">-</span>29.97</span>
+<span><span class="plusMinus">-</span>29.95</span>
 </div>
 </div>
 </li>
@@ -539,14 +539,14 @@ $j('#cnn_pmtvmodule').parent().addClass('tve');
 <span class="marketName">
 <a href="http://money.cnn.com/data/markets/sandp/">S&amp;P</a>
 </span>
-<span class="marketIndex">1,549.21</span>
+<span class="marketIndex">1,549.08</span>
 </div>
 <div class="marketNums-right down">
 <div class="percentDiff">
-<span>(<span class="plusMinus">-</span>0.69 &#37;)</span>
+<span>(<span class="plusMinus">-</span>0.70 &#37;)</span>
 </div>
 <div class="numDiff">
-<span><span class="plusMinus">-</span>10.77</span>
+<span><span class="plusMinus">-</span>10.9</span>
 </div>
 </div>
 </li>
